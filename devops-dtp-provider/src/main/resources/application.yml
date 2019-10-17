@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: devops-dtp
+  profiles:
+    active: local
+  dubbo:
+    application:
+      name: devops-dtp
+    protocol:
+      name: dubbo
+      port: 20880
+    consumer:
+      check: false
+    registry:
+      check: false
+swagger:
+  base-package: com.deepexi.controller
+  info:
+    title: devops-dtp
+server:
+  port: 8080
+logging:
+  file: 'logs/${spring.application.name}.log'
